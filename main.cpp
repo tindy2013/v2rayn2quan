@@ -266,7 +266,7 @@ int main(int argc, char* argv[])
     vector<string> strServers;
     ua="Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16A5366a";
     group="V2RayProvider";
-    method="chacha20-poly1305";
+    method="chacha20-ietf-poly1305";
     //strArgs=argv[1];
     //if(argc<2) return 0;
     //strInput=argv[1];
