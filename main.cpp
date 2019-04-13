@@ -296,7 +296,7 @@ int main(int argc, char* argv[])
         net=json["net"].GetString();
         host=json["host"].GetString();
         tls=json["tls"].GetString();
-        obfs=",obfs="+chkobfs(net)+",obfs-path=\""+chkobfspath(path)+"\",obfs-header=\"Host:"+chkobfshost(add,host)+"[Rr][Nn]User-Agent:"+ua+"\"";
+        obfs=",obfs="+chkobfs(net)+",obfs-path=\""+chkobfspath(path)+"\",obfs-header=\"Host: "+chkobfshost(add,host)+"[Rr][Nn]User-Agent: "+ua+"\"";
         quanVmess=ps+" = vmess,"+add+","+port+","+method+",\""+id+"\",group="+group+",over-tls="+chktls(tls)+",certificate=1"+chkifobfs(net,type,obfs);
         chrTemp=quanVmess.c_str();
         strResult+="vmess://"+base64_encode(chrTemp,quanVmess.size())+'\r';
